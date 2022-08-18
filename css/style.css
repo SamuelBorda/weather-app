@@ -3,6 +3,7 @@
 *::before {
   box-sizing: border-box;
   margin: 0;
+  color: white;
 }
 .container-main{
 display: flex;
@@ -41,40 +42,56 @@ justify-content: center;
    
 }
 .icono{
-    background-color: aqua;
-    width: 100%;
-    height: 25vh;
+    /*background-color: aqua;*/
+    width: 80%;
+    height: auto;
   
 }
+.t{
+    text-align: center;
+}
+.img-ico{
+    width: 100px;
+    width: 100px;
+}
+.temp{
+    display: flex;
+    justify-content: space-around;
+}
 .temperatura{
-    background-color: rgb(48, 53, 53);
+   /* background-color: rgb(48, 53, 53);*/
     width: 100%;
     height: 25vh; 
+    padding-top: 40px;
 }
 .estado{
-    background-color: rgb(102, 93, 230);
+   /* background-color: rgb(102, 93, 230);*/
     width: 100%;
     height: 20vh; 
 }
 .fecha{
-    background-color: rgb(13, 228, 228);
+    /*background-color: rgb(13, 228, 228);*/
     width: 100%;
     height: 5vh; 
 }
 .loca{
-    background-color: rgb(146, 228, 13);
+   /* background-color: rgb(146, 228, 13);*/
     width: 100%;
     height: 5vh; 
+    padding-top: 50px;
 }
 
 /*container right*/
 .icons{
     display: flex;
     flex-direction: row-reverse;
-    color: aliceblue;
+    color: black !important;
     padding-right: 80px;
     padding-top: 20px;
     border-radius: 30px;
+}
+button{
+    color: #100E1D;
 }
 .c{
     padding-left: 10px;
@@ -93,14 +110,24 @@ justify-content: center;
 }
 .tabla{
     display: flex;
-    
+    flex-grow: 0;
     width: 100%;
     height: 1vh;
     padding-left: 200px;
     padding-right: 200px;
+ 
+}
+.tabla2{
+    display: flex;
+    flex-grow: 0;
+    width: 100%;
+    height: 1vh;
+    padding-left: 200px;
+    padding-right: 200px;
+ 
 }
 .t{
-background-color: antiquewhite;
+background-color: #1E213A;
 width: 18vh;
 height: 20vh;
 margin: 20px;
@@ -113,17 +140,19 @@ margin: 20px;
     padding-top: 225px;
 }
 .n{
-    display: flex;
-    flex-flow: wrap;
+   
     justify-content: center;
     margin: auto;
 }
 .nn{
     padding-top: 200px;
+   
     justify-content: center;
     margin: auto;
-    display: flex;
-    flex-flow: wrap;
+    
+}
+a{
+    text-decoration: none;
 }
 .d{
     width: 40vh;
@@ -134,11 +163,29 @@ margin: 20px;
     width: 40vh;
 height: 18vh;
 margin: 20px;
-display: flex;
+
 
 }
-
-
+.texto-t{
+    padding-top: 10px;
+    
+}
+.texto-tt{
+    padding-top: 30px;
+}
+.container-numero{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding-top: 50px;
+}
+.num{
+    font-size: 30px;
+}
+.tex{
+    padding-top: 10px;
+    font-size: 20px;
+}
 
 .footer{
     background-color: black;
@@ -150,8 +197,138 @@ display: flex;
     text-align: center;
     
 }
-@media screen and (max-width: 1400px) {
-.nn{
-    padding-top: 450px;
+
+@media screen and (max-width: 1485px) {
+
 }
-}
+@media screen and (max-width: 1340px) {
+    .tabla2{
+        padding-left: 100px;
+    }
+    .tabla{
+        padding-left: 100px;
+    }
+    
+    }
+ @media screen and (max-width: 1200px) {
+    .texto{
+    
+        color: white;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        padding-top: 0px;
+        padding-bottom: 250px;
+        padding-left: 0px;
+    }
+    .n{
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    }
+    .nn{
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    }
+   
+    .container-left{
+        
+        height:1800px;
+        
+        
+        }
+        .conatiner-right{
+            
+            height:1800px;
+        }
+        .footer{
+            visibility: hidden;
+        }
+        .tabla{
+            flex-direction: column;
+            padding-bottom: 1000px;
+            align-items: center;
+        }
+        .tabla2{
+            flex-direction: column;
+            padding-bottom: 200px;
+            align-items: center;
+            padding-right: 100px;
+        }
+        .t{
+            padding-bottom: 0px !important;
+        }
+        .nn{
+            padding-top: 150px;
+            display: flex;
+            flex-direction: column;
+            padding-bottom: 0px !important;
+        }
+        .texto{}
+    }
+
+    @media screen and (max-width: 480px) {
+        .n{
+            display: flex;
+            flex-direction: column;
+            padding-right: 100px;
+            
+        }
+       
+        .container-left{
+            
+            height:1900px;
+            
+            
+            }
+            .conatiner-right{
+                
+                height:1900px;
+            }
+            .footer{
+                visibility: hidden;
+            }
+            .tabla{
+                flex-direction: column;
+                padding-bottom: 1000px;
+                align-items: center;
+                padding-right: 100px;
+            }
+            .tabla2{
+                flex-direction: column;
+                padding-bottom: 30px;
+                align-items: center;
+                padding-right: 100px;
+            }
+            .t{
+                padding-bottom: 0px !important;
+            }
+            .nn{
+                padding-top: 350px;
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 0px !important;
+            }
+            .d{
+                width: 200px;
+            }
+            .dd{
+                width: 200px;
+            }
+        }
+
+        @media screen and (max-width: 300px) {
+            .container-main{
+                flex-direction: column;
+            }
+            .container-left{
+                width: 100%;
+                height: 900px;
+            }
+            .conatiner-right{
+                width: 100%;
+                height: 2000px;
+            }
+        }
