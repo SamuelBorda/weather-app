@@ -1,0 +1,157 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+.container-main{
+display: flex;
+
+   
+}
+.container-left{
+background-color: #35384E;
+width: 17%;
+height:100vh;
+color: white;
+align-items: center;
+justify-content: center;
+
+}
+.conatiner-right{
+    background-color: #100E1D;
+    width: 83%;
+    height:100vh;
+}
+/*containter button top left*/
+.button-top{
+    display: flex;
+    justify-content:space-around;
+    padding-top: 20px;
+    
+}
+.datos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+   
+}
+.icono{
+    background-color: aqua;
+    width: 100%;
+    height: 25vh;
+  
+}
+.temperatura{
+    background-color: rgb(48, 53, 53);
+    width: 100%;
+    height: 25vh; 
+}
+.estado{
+    background-color: rgb(102, 93, 230);
+    width: 100%;
+    height: 20vh; 
+}
+.fecha{
+    background-color: rgb(13, 228, 228);
+    width: 100%;
+    height: 5vh; 
+}
+.loca{
+    background-color: rgb(146, 228, 13);
+    width: 100%;
+    height: 5vh; 
+}
+
+/*container right*/
+.icons{
+    display: flex;
+    flex-direction: row-reverse;
+    color: aliceblue;
+    padding-right: 80px;
+    padding-top: 20px;
+    border-radius: 30px;
+}
+.c{
+    padding-left: 10px;
+    
+}
+.f{
+    padding-left: 10px;
+}
+.cc{
+    border-radius: 80%;
+    font-size: 20px;
+}
+.ff{
+    border-radius: 80%;
+    font-size: 20px;
+}
+.tabla{
+    display: flex;
+    
+    width: 100%;
+    height: 1vh;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+.t{
+background-color: antiquewhite;
+width: 18vh;
+height: 20vh;
+margin: 20px;
+
+}
+.texto{
+    
+    color: white;
+    padding-left: 220px;
+    padding-top: 225px;
+}
+.n{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: center;
+    margin: auto;
+}
+.nn{
+    padding-top: 200px;
+    justify-content: center;
+    margin: auto;
+    display: flex;
+    flex-flow: wrap;
+}
+.d{
+    width: 40vh;
+height: 20vh;
+margin: 20px;
+}
+.dd{
+    width: 40vh;
+height: 18vh;
+margin: 20px;
+display: flex;
+
+}
+
+
+
+.footer{
+    background-color: black;
+    bottom: 0;
+    position: absolute;
+    width: 83%;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    
+}
+@media screen and (max-width: 1400px) {
+.nn{
+    padding-top: 450px;
+}
+}
